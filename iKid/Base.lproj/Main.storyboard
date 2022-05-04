@@ -37,7 +37,7 @@
         <!--Good-->
         <scene sceneID="lXi-CP-rcN">
             <objects>
-                <viewController id="NX2-tu-Fdd" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="NX2-tu-Fdd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dN6-Jd-GcP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Next"/>
                                 <connections>
-                                    <segue destination="NVo-kS-8uM" kind="presentation" modalTransitionStyle="flipHorizontal" id="efA-8s-eQV"/>
+                                    <segue destination="NVo-kS-8uM" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="efA-8s-eQV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,6 +63,7 @@
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <color key="tintColor" name="AccentColor"/>
                         <constraints>
+                            <constraint firstItem="bwe-b3-FwW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kAE-f0-g0w" secondAttribute="leading" symbolic="YES" id="7JF-My-e7n"/>
                             <constraint firstItem="8yd-la-cob" firstAttribute="centerY" secondItem="kAE-f0-g0w" secondAttribute="centerY" id="89K-A6-csx"/>
                             <constraint firstItem="bwe-b3-FwW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kAE-f0-g0w" secondAttribute="leading" symbolic="YES" id="ddr-hn-KNp"/>
                             <constraint firstItem="8yd-la-cob" firstAttribute="centerX" secondItem="kAE-f0-g0w" secondAttribute="centerX" id="o0p-hf-K9R"/>
@@ -86,11 +87,11 @@
             <objects>
                 <viewController id="NVo-kS-8uM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Afj-1V-mmT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaw-aa-eHn">
-                                <rect key="frame" x="54" y="385" width="308" height="72"/>
+                                <rect key="frame" x="54" y="412" width="308" height="72"/>
                                 <string key="text">Because they makeup
 everything</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -98,11 +99,11 @@ everything</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmY-JI-QtN">
-                                <rect key="frame" x="338" y="777" width="56" height="31"/>
+                                <rect key="frame" x="338" y="797" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back"/>
                                 <connections>
-                                    <segue destination="gFD-EA-dns" kind="presentation" modalTransitionStyle="flipHorizontal" id="QXB-AZ-dwa"/>
+                                    <segue destination="gFD-EA-dns" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="QXB-AZ-dwa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,6 +115,7 @@ everything</string>
                             <constraint firstItem="hui-UN-GB2" firstAttribute="trailing" secondItem="gmY-JI-QtN" secondAttribute="trailing" constant="20" id="M9P-x8-YXO"/>
                             <constraint firstItem="gmY-JI-QtN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hui-UN-GB2" secondAttribute="leading" symbolic="YES" id="Son-w3-Zf5"/>
                             <constraint firstItem="kaw-aa-eHn" firstAttribute="centerY" secondItem="Afj-1V-mmT" secondAttribute="centerY" id="Ug3-uR-6KV"/>
+                            <constraint firstItem="gmY-JI-QtN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hui-UN-GB2" secondAttribute="leading" symbolic="YES" id="Vxr-db-utk"/>
                             <constraint firstItem="hui-UN-GB2" firstAttribute="trailing" secondItem="kaw-aa-eHn" secondAttribute="trailing" constant="52" id="x8A-NQ-dBY"/>
                         </constraints>
                         <variation key="default">
@@ -133,19 +135,19 @@ everything</string>
             <objects>
                 <viewController id="rBE-Tp-HDf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rpS-Uv-syG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvX-rD-mec">
-                                <rect key="frame" x="340" y="777" width="54" height="31"/>
+                                <rect key="frame" x="340" y="797" width="54" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Next"/>
                                 <connections>
-                                    <segue destination="gpG-0Q-bg2" kind="presentation" modalTransitionStyle="flipHorizontal" id="7Zy-HS-6qW"/>
+                                    <segue destination="gpG-0Q-bg2" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="7Zy-HS-6qW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who's there?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyE-Cn-Qb0">
-                                <rect key="frame" x="114" y="403" width="186" height="36"/>
+                                <rect key="frame" x="114" y="430" width="186" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -156,6 +158,7 @@ everything</string>
                         <constraints>
                             <constraint firstItem="ZyE-Cn-Qb0" firstAttribute="centerX" secondItem="rpS-Uv-syG" secondAttribute="centerX" id="1E9-VW-JbP"/>
                             <constraint firstItem="9we-Cr-SIH" firstAttribute="bottom" secondItem="fvX-rD-mec" secondAttribute="bottom" constant="34" id="25c-f7-PwJ"/>
+                            <constraint firstItem="fvX-rD-mec" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9we-Cr-SIH" secondAttribute="leading" symbolic="YES" id="I6k-70-UFP"/>
                             <constraint firstItem="9we-Cr-SIH" firstAttribute="trailing" secondItem="fvX-rD-mec" secondAttribute="trailing" constant="20" id="I6r-hs-7sX"/>
                             <constraint firstItem="ZyE-Cn-Qb0" firstAttribute="centerY" secondItem="rpS-Uv-syG" secondAttribute="centerY" id="jNu-MX-b7d"/>
                         </constraints>
@@ -170,11 +173,11 @@ everything</string>
             <objects>
                 <viewController id="zdO-uX-bM5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EFU-Ge-zAZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IE9-gM-DsU">
-                                <rect key="frame" x="77" y="385" width="260" height="72"/>
+                                <rect key="frame" x="77" y="412" width="260" height="72"/>
                                 <string key="text">Why don’t oysters 
 donate to charity?</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -182,11 +185,11 @@ donate to charity?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwP-E7-meu">
-                                <rect key="frame" x="340" y="728" width="54" height="31"/>
+                                <rect key="frame" x="340" y="748" width="54" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Next"/>
                                 <connections>
-                                    <segue destination="Pkn-JP-J6l" kind="presentation" modalTransitionStyle="flipHorizontal" id="zFj-ki-bNd"/>
+                                    <segue destination="Pkn-JP-J6l" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="zFj-ki-bNd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,6 +200,7 @@ donate to charity?</string>
                             <constraint firstItem="gOQ-9S-2AB" firstAttribute="trailing" secondItem="QwP-E7-meu" secondAttribute="trailing" constant="20" id="Cci-XW-Z01"/>
                             <constraint firstItem="IE9-gM-DsU" firstAttribute="centerX" secondItem="EFU-Ge-zAZ" secondAttribute="centerX" id="bBu-kc-ILd"/>
                             <constraint firstItem="IE9-gM-DsU" firstAttribute="centerY" secondItem="EFU-Ge-zAZ" secondAttribute="centerY" id="egL-eI-R6y"/>
+                            <constraint firstItem="QwP-E7-meu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gOQ-9S-2AB" secondAttribute="leading" symbolic="YES" id="jFp-5x-RRl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bad" image="triangle.fill" catalog="system" id="hnc-GV-uhj"/>
@@ -224,7 +228,7 @@ donate to charity?</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Next"/>
                                 <connections>
-                                    <segue destination="rBE-Tp-HDf" kind="presentation" modalTransitionStyle="flipHorizontal" id="CtI-WX-scQ"/>
+                                    <segue destination="rBE-Tp-HDf" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="CtI-WX-scQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -235,32 +239,33 @@ donate to charity?</string>
                             <constraint firstItem="9dr-Ag-jFQ" firstAttribute="centerY" secondItem="roY-7i-0MU" secondAttribute="centerY" id="BdU-fr-hyz"/>
                             <constraint firstItem="2n3-ZT-uOp" firstAttribute="bottom" secondItem="bIt-Rg-Amk" secondAttribute="bottom" constant="34" id="VHq-im-xtl"/>
                             <constraint firstItem="2n3-ZT-uOp" firstAttribute="trailing" secondItem="bIt-Rg-Amk" secondAttribute="trailing" constant="20" id="YGD-NO-w8f"/>
+                            <constraint firstItem="bIt-Rg-Amk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2n3-ZT-uOp" secondAttribute="leading" symbolic="YES" id="kZA-HY-wLh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Knock Knock" image="circle.fill" catalog="system" id="KQU-9t-Jyx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97Z-zp-Cw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-830.43478260869574" y="1050.6696428571429"/>
+            <point key="canvasLocation" x="-830" y="1040"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ld8-aT-QC6">
             <objects>
                 <viewController id="gpG-0Q-bg2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pio-fH-ToU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbq-d3-1XA">
-                                <rect key="frame" x="340" y="777" width="54" height="31"/>
+                                <rect key="frame" x="340" y="797" width="54" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Next"/>
                                 <connections>
-                                    <segue destination="tku-5Y-mfi" kind="presentation" modalTransitionStyle="flipHorizontal" id="CcX-uo-MZX"/>
+                                    <segue destination="tku-5Y-mfi" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="CcX-uo-MZX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tank" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1G-7r-12k">
-                                <rect key="frame" x="174" y="403" width="66" height="36"/>
+                                <rect key="frame" x="174" y="430" width="66" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -273,6 +278,7 @@ donate to charity?</string>
                             <constraint firstItem="L1G-7r-12k" firstAttribute="centerX" secondItem="Pio-fH-ToU" secondAttribute="centerX" id="Fr4-6k-OQI"/>
                             <constraint firstItem="L1G-7r-12k" firstAttribute="centerY" secondItem="Pio-fH-ToU" secondAttribute="centerY" id="H6M-V1-bT2"/>
                             <constraint firstItem="dvW-DK-Jzy" firstAttribute="bottom" secondItem="Bbq-d3-1XA" secondAttribute="bottom" constant="34" id="jGG-PD-jQm"/>
+                            <constraint firstItem="Bbq-d3-1XA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dvW-DK-Jzy" secondAttribute="leading" symbolic="YES" id="jiC-B9-7H9"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -285,19 +291,19 @@ donate to charity?</string>
             <objects>
                 <viewController id="tku-5Y-mfi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2px-le-1oa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2S-qv-0yY">
-                                <rect key="frame" x="340" y="777" width="54" height="31"/>
+                                <rect key="frame" x="340" y="797" width="54" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Next"/>
                                 <connections>
-                                    <segue destination="wcA-h4-Ctr" kind="presentation" modalTransitionStyle="flipHorizontal" id="dWg-Fn-lke"/>
+                                    <segue destination="wcA-h4-Ctr" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="dWg-Fn-lke"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tank who?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhI-fl-WwW">
-                                <rect key="frame" x="133" y="403" width="148.5" height="36"/>
+                                <rect key="frame" x="133" y="430" width="148.5" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -306,6 +312,7 @@ donate to charity?</string>
                         <viewLayoutGuide key="safeArea" id="dJC-DW-HER"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
+                            <constraint firstItem="t2S-qv-0yY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dJC-DW-HER" secondAttribute="leading" symbolic="YES" id="6sF-fe-sdG"/>
                             <constraint firstItem="LhI-fl-WwW" firstAttribute="centerY" secondItem="2px-le-1oa" secondAttribute="centerY" id="P66-dK-OxE"/>
                             <constraint firstItem="dJC-DW-HER" firstAttribute="trailing" secondItem="t2S-qv-0yY" secondAttribute="trailing" constant="20" id="QGM-GS-Aqd"/>
                             <constraint firstItem="dJC-DW-HER" firstAttribute="bottom" secondItem="t2S-qv-0yY" secondAttribute="bottom" constant="34" id="cGF-pp-jyx"/>
@@ -322,19 +329,19 @@ donate to charity?</string>
             <objects>
                 <viewController id="wcA-h4-Ctr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qlh-NK-1hS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIE-ea-fmK">
-                                <rect key="frame" x="338" y="777" width="56" height="31"/>
+                                <rect key="frame" x="338" y="797" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back"/>
                                 <connections>
-                                    <segue destination="gFD-EA-dns" kind="presentation" modalTransitionStyle="flipHorizontal" id="dGo-nQ-07w"/>
+                                    <segue destination="gFD-EA-dns" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="dGo-nQ-07w"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're welcome." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxI-Pn-ibh">
-                                <rect key="frame" x="92.5" y="403" width="229" height="36"/>
+                                <rect key="frame" x="92.5" y="430" width="229" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -345,6 +352,7 @@ donate to charity?</string>
                         <constraints>
                             <constraint firstItem="gxI-Pn-ibh" firstAttribute="centerX" secondItem="Qlh-NK-1hS" secondAttribute="centerX" id="BDp-K5-i1b"/>
                             <constraint firstItem="gxI-Pn-ibh" firstAttribute="centerY" secondItem="Qlh-NK-1hS" secondAttribute="centerY" id="Pzo-NN-2GV"/>
+                            <constraint firstItem="eIE-ea-fmK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jeY-bG-bec" secondAttribute="leading" symbolic="YES" id="UXW-bb-G1B"/>
                             <constraint firstItem="jeY-bG-bec" firstAttribute="bottom" secondItem="eIE-ea-fmK" secondAttribute="bottom" constant="34" id="gtv-XM-zoV"/>
                             <constraint firstItem="jeY-bG-bec" firstAttribute="trailing" secondItem="eIE-ea-fmK" secondAttribute="trailing" constant="20" id="l9E-Fl-wgx"/>
                         </constraints>
@@ -375,7 +383,7 @@ than sound.</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Next"/>
                                 <connections>
-                                    <segue destination="HkN-Sz-MpL" kind="presentation" modalTransitionStyle="flipHorizontal" id="Trm-QT-GlM"/>
+                                    <segue destination="HkN-Sz-MpL" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Trm-QT-GlM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -386,6 +394,7 @@ than sound.</string>
                             <constraint firstItem="hvn-8Y-Uhn" firstAttribute="bottom" secondItem="I1S-pY-m5t" secondAttribute="bottom" constant="34" id="XF1-9D-7nT"/>
                             <constraint firstItem="eEx-Ev-ARA" firstAttribute="centerY" secondItem="Js6-g3-WXH" secondAttribute="centerY" id="gBS-SF-Pcm"/>
                             <constraint firstItem="hvn-8Y-Uhn" firstAttribute="trailing" secondItem="I1S-pY-m5t" secondAttribute="trailing" constant="20" id="nLI-QK-kDl"/>
+                            <constraint firstItem="I1S-pY-m5t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hvn-8Y-Uhn" secondAttribute="leading" symbolic="YES" id="w7M-xq-ebk"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" image="star.fill" catalog="system" id="zIU-w9-nNF"/>
@@ -399,19 +408,19 @@ than sound.</string>
             <objects>
                 <viewController id="Pkn-JP-J6l" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WZU-Ex-nog">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpT-SA-qhS">
-                                <rect key="frame" x="338" y="777" width="56" height="31"/>
+                                <rect key="frame" x="338" y="797" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back"/>
                                 <connections>
-                                    <segue destination="gFD-EA-dns" kind="presentation" modalTransitionStyle="flipHorizontal" id="4iT-n2-rYI"/>
+                                    <segue destination="gFD-EA-dns" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="4iT-n2-rYI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gH-w3-OhP">
-                                <rect key="frame" x="94" y="385" width="226" height="72"/>
+                                <rect key="frame" x="94" y="412" width="226" height="72"/>
                                 <string key="text">Because they're
 shellfish.</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -426,6 +435,7 @@ shellfish.</string>
                             <constraint firstItem="0gH-w3-OhP" firstAttribute="centerY" secondItem="WZU-Ex-nog" secondAttribute="centerY" id="AiE-F8-dmT"/>
                             <constraint firstItem="BFf-fd-uFs" firstAttribute="bottom" secondItem="cpT-SA-qhS" secondAttribute="bottom" constant="34" id="DBC-dH-15J"/>
                             <constraint firstItem="BFf-fd-uFs" firstAttribute="trailing" secondItem="cpT-SA-qhS" secondAttribute="trailing" constant="20" id="PZv-aX-KpN"/>
+                            <constraint firstItem="cpT-SA-qhS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BFf-fd-uFs" secondAttribute="leading" symbolic="YES" id="wJM-Ez-wXn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -438,19 +448,19 @@ shellfish.</string>
             <objects>
                 <viewController id="HkN-Sz-MpL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gI0-KQ-agm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBv-Yi-g5W">
-                                <rect key="frame" x="338" y="777" width="56" height="31"/>
+                                <rect key="frame" x="338" y="797" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back"/>
                                 <connections>
-                                    <segue destination="gFD-EA-dns" kind="presentation" modalTransitionStyle="flipHorizontal" id="zze-e9-f5N"/>
+                                    <segue destination="gFD-EA-dns" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="zze-e9-f5N"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1J-Q0-0fS">
-                                <rect key="frame" x="84.5" y="349.5" width="245" height="143.5"/>
+                                <rect key="frame" x="84.5" y="376.5" width="245" height="143.5"/>
                                 <string key="text">That's why some 
 people appear 
 bright until you 
@@ -465,6 +475,7 @@ hear them speak.</string>
                         <constraints>
                             <constraint firstItem="I1J-Q0-0fS" firstAttribute="centerX" secondItem="gI0-KQ-agm" secondAttribute="centerX" id="09B-mB-2sp"/>
                             <constraint firstItem="0Kd-cl-JZp" firstAttribute="bottom" secondItem="LBv-Yi-g5W" secondAttribute="bottom" constant="34" id="CBj-a5-MDR"/>
+                            <constraint firstItem="LBv-Yi-g5W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Kd-cl-JZp" secondAttribute="leading" symbolic="YES" id="MmM-Xn-OVZ"/>
                             <constraint firstItem="I1J-Q0-0fS" firstAttribute="centerY" secondItem="gI0-KQ-agm" secondAttribute="centerY" id="S1f-xx-Sey"/>
                             <constraint firstItem="0Kd-cl-JZp" firstAttribute="trailing" secondItem="LBv-Yi-g5W" secondAttribute="trailing" constant="20" id="fkV-gm-W3K"/>
                         </constraints>
@@ -501,7 +512,7 @@ hear them speak.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8b-gp-y6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2328" y="1051"/>
+            <point key="canvasLocation" x="2303" y="1051"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
